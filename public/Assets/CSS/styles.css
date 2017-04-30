@@ -43,8 +43,26 @@ article {
   font-family: 'atc_harrisregular';
 }
 
+a:link {
+  color: #222;
+}
+
+a:visited {
+  color: #222;
+}
+
+a:hover {
+  color: #222;
+}
+
+a:active {
+  color: #222;
+}
+
+/* Article Header */
+
 .Header {
-  height: 400px;
+  height: 346px;
   background-image: url('../images/header.jpg');
   background-size: cover;
   background-position: center;
@@ -69,4 +87,66 @@ article {
   font-size: 1.5rem;
   flex: 1;
   padding: 0rem 6rem 0 6rem;
+}
+
+/* Article Body */
+
+.ArticleBody {
+  margin-top: 5rem;
+}
+
+ul {
+  padding: 0px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.CardList {
+  list-style: none;
+  margin-top: 5rem;
+  border: 1px solid #222;
+}
+
+.inner {
+  height: 400px;
+  display: flex;
+}
+
+.Content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem 2rem 4rem 4rem;
+}
+.ArtWork {
+  flex: 1.2;
+  background-image: url('../images/feature.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+/* Card Styles */
+
+.CardHeader {
+  font-size: 2.5rem;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.CardSubHeader {
+  flex: 1;
+  color: #ef766e;
+  line-height: 1.5rem;
+  margin: 0px 0px 1rem 0px;
+}
+
+.CardParagraph {
+  flex: 1;
+  color: #8898aa;
+  line-height: 1.5rem;
+  font-family: 'atc_harrislight';
 }

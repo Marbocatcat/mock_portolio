@@ -1,14 +1,15 @@
 import React from 'react';
-import IntroArticle from './Article_Intro/IntroArticle';
+import ArticleHeader from './ArticleHeader/ArticleHeader';
+import ArticleBody from './ArticleBody/ArticleBody';
 
 
 export default class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <IntroArticle />
+        <ArticleHeader />
+        <ArticleBody />
       </div>
-
     )
   }
 };
