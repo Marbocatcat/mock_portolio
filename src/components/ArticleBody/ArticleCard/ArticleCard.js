@@ -6,32 +6,39 @@ const ArticleCard = (props) => {
       <a href="">
         <div className="inner">
           <div className="Content">
-            <CardHeader />
-            <CardSubHeader />
-            <CardParagraph />
+            <CardHeader Header={ props.Header }/>
+            <CardSubHeader SubHeader={ props.SubHeader } />
+            <CardParagraph Paragraph={ props.Paragraph }/>
           </div>
-          <div className="ArtWork"></div>
+          <ArtWork Artwork={ props.Artwork }/>
         </div>
       </a>
     </li>
   )
 };
 
+const ArtWork = (props) => {
+  return (
+    <div className={ props.Artwork }></div>
+  )
+};
+
+
 const CardHeader = (props) => {
   return (
-    <h2 className="CardHeader">What happens in new Technology?</h2>
+    <h2 className="CardHeader">{ props.Header }</h2>
   )
 };
 
 const CardSubHeader = (props) => {
   return (
-    <h4 className="CardSubHeader">A SURVEY OF INCIDENT RESPONSE ACROSS THE TECH INDUSTRY</h4>
+    <h4 className="CardSubHeader">{ props.SubHeader }</h4>
   )
 };
 
 const CardParagraph = (props) => {
   return (
-    <p className="CardParagraph">To discover the state of incident response across the tech industry, Increment surveyed over thirty industry leaders (including Amazon, Dropbox, Facebook, Google, and Netflix) about their incident response processes.</p>
+    <p className="CardParagraph">{ props.Paragraph }</p>
   )
 };
 
