@@ -10,7 +10,7 @@ const ArticleCard = (props) => {
             <CardSubHeader SubHeader={ props.SubHeader } />
             <CardParagraph Paragraph={ props.Paragraph }/>
           </div>
-          <ArtWork Artwork={ props.Artwork }/>
+          <ArtWork Artwork={ props.Artwork } />
         </div>
       </a>
     </li>
@@ -22,7 +22,6 @@ const ArtWork = (props) => {
     <div className={ props.Artwork }></div>
   )
 };
-
 
 const CardHeader = (props) => {
   return (

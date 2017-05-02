@@ -45,13 +45,14 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 7rem auto 7rem;
+  grid-template-columns: 20rem auto 20rem;
   grid-template-rows: auto;
   grid-template-areas:
          ". header ."
           ". body ."
     "footer footer footer"
 }
+
 
 article {
   font-family: 'atc_harrisregular';
@@ -114,9 +115,30 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+
+}
+
+.siloCard {
+  display: flex;
+  height: 380px;
+  justify-content: space-between;
+}
+
+.left {
+  margin-top: 5rem;
+  border: 1px solid #222;
+  flex: 1rem;
+}
+
+.right {
+  margin-top: 5rem;
+  border: 1px solid #222;
+  flex: 1rem;
+}
 
 .CardList {
-  list-style: none;
   margin-top: 5rem;
   border: 1px solid #222;
 }
@@ -125,6 +147,8 @@ a {
   height: 380px;
   display: flex;
 }
+
+
 
 .Content{
   display: flex;

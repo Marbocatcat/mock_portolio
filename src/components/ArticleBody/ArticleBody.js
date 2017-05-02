@@ -1,6 +1,7 @@
 import React from 'react';
 import ArticleCard from '../ArticleBody/ArticleCard/ArticleCard';
-import data from '../data.js';
+import SiloCard from './ArticleCard/SiloCard';
+import data from '../data';
 
 export default class ArticleBody extends React.Component {
   render() {
@@ -8,18 +9,20 @@ export default class ArticleBody extends React.Component {
       <article className="ArticleBody">
         <ul>
           <ArticleCard
-            Header={ data[0].Header }
-            SubHeader={ data[0].SubHeader }
-            Paragraph={ data[0].Paragraph }
-            Artwork={ data[0].artwork }
-            />
-          <ArticleCard
             Header={ data[1].Header }
             SubHeader={ data[1].SubHeader }
             Paragraph={ data[1].Paragraph }
-            Artwork={ data[1].artwork}
+            Artwork={ data[1].artwork }
             />
+          <ArticleCard
+            Header={ data[2].Header }
+            SubHeader={ data[2].SubHeader }
+            Paragraph={ data[2].Paragraph }
+            Artwork={ data[2].artwork}
+            />
+          <SiloCard />
         </ul>
+
       </article>
     )
   }

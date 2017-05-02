@@ -1,6 +1,10 @@
 
 const data = [
   {
+    Caption: "Cinematography",
+    Description: "Increment is dedicated to covering how teams build and operate software systems at scale, one issue at a time. In this, our inaugural issue, we focus on industry best practices around on-call and incident response",
+  },
+  {
     Header: "What happens in new Technology?",
     SubHeader: "A SURVEY OF INCIDENT RESPONSE ACROSS THE TECH INDUSTRY",
     Paragraph: "To discover the state of incident response across the tech industry, Increment surveyed over thirty industry leaders (including Amazon, Dropbox, Facebook, Google, and Netflix) about their incident response processes.",
