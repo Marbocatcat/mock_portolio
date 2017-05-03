@@ -2,7 +2,7 @@ import React from 'react';
 
 const SiloCard = (props) => {
   return (
-    <li className="siloCard">
+    <ul className="siloCard">
       <li className="left Card">
         <a href="">
           <div className="Content">
@@ -21,7 +21,7 @@ const SiloCard = (props) => {
           </div>
         </a>
       </li>
-    </li>
+    </ul>
 
 
   )
